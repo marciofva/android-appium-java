@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" >
+
+	<test name="Android emulator">
+		<parameter name="platform" value="android" />
+		<parameter name="device" value="emulator-5554" />
+		<classes>
+			<class name="com.monefy.test.ExpenseTest" />
+			<class name="com.monefy.test.IncomeTest" />
+		</classes>
+	</test>
+</suite>
